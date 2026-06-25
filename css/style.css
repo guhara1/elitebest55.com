@@ -250,9 +250,15 @@ img { max-width: 100%; display: block; }
     radial-gradient(2px 2px at 35% 70%, rgba(212,175,106,.3), transparent);
   opacity: 0.6;
 }
+.hero__media {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; z-index: 0; pointer-events: none;
+}
 .hero__overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, var(--bg) 2%, transparent 40%);
+  position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(105deg, rgba(8,7,11,.94) 0%, rgba(8,7,11,.8) 38%, rgba(8,7,11,.45) 70%, rgba(8,7,11,.6) 100%),
+    linear-gradient(to top, var(--bg) 3%, transparent 48%);
 }
 .hero__content {
   position: relative;
@@ -762,12 +768,12 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    히어로 우측 비주얼 — 실시간 예약 글래스 카드 + 글로우 + 이퀄라이저
    ============================================================ */
-.hero__content { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
-.hero__visual { position: relative; display: flex; justify-content: center; align-items: center; min-height: 360px; }
+.hero__content { position: relative; z-index: 2; }
 
-.hero-orb { position: absolute; border-radius: 50%; filter: blur(64px); z-index: 0; pointer-events: none; }
-.hero-orb--1 { width: 300px; height: 300px; background: radial-gradient(circle, rgba(216,181,118,.5), transparent 70%); top: -30px; right: 0; animation: heroFloat 8s ease-in-out infinite; }
-.hero-orb--2 { width: 240px; height: 240px; background: radial-gradient(circle, rgba(177,51,72,.45), transparent 70%); bottom: -20px; left: -10px; animation: heroFloat 11s ease-in-out infinite reverse; }
+/* 배경 글로우 오브 (영상이 없을 때 폴백 장식, 영상 위 은은한 무드 조명) */
+.hero-orb { position: absolute; border-radius: 50%; filter: blur(70px); z-index: 0; pointer-events: none; }
+.hero-orb--1 { width: 360px; height: 360px; background: radial-gradient(circle, rgba(216,181,118,.42), transparent 70%); top: 6%; right: 6%; animation: heroFloat 8s ease-in-out infinite; }
+.hero-orb--2 { width: 300px; height: 300px; background: radial-gradient(circle, rgba(177,51,72,.4), transparent 70%); bottom: 8%; right: 22%; animation: heroFloat 11s ease-in-out infinite reverse; }
 
 .res-card {
   position: relative; z-index: 1; width: 100%; max-width: 370px;
@@ -806,11 +812,10 @@ img { max-width: 100%; display: block; }
 @keyframes heroFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
 
 @media (max-width: 900px) {
-  .hero__content { grid-template-columns: 1fr; gap: 34px; }
-  .hero__visual { order: 2; min-height: 0; }
-  .res-card { max-width: 420px; margin: 0 auto; }
-  .hero-orb { display: none; }
+  .hero-orb--1 { width: 240px; height: 240px; top: 4%; right: -6%; }
+  .hero-orb--2 { width: 190px; height: 190px; right: 8%; bottom: 12%; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .hero__media { display: none; }
   .hero-orb, .equalizer span, .live__dot { animation: none; }
 }
