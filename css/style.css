@@ -840,3 +840,34 @@ img { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) {
   .hero-orb, .equalizer span, .live__dot, .hero-halo::before { animation: none; }
 }
+
+/* ============================================================
+   별점 / 평점 요약 + 사이트 전체 푸터 내비게이션
+   ============================================================ */
+.stars { color: var(--gold); letter-spacing: 2px; font-size: .95rem; white-space: nowrap; }
+.stars--sm { font-size: .82rem; }
+.review-card__rating { margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.review-card__rating .num { color: var(--gold-soft); font-weight: 700; font-size: .85rem; }
+
+.rating-summary {
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+  width: fit-content; max-width: 100%; margin: 0 auto 30px; padding: 16px 26px;
+  background: var(--grad-surface); border: 1px solid rgba(216,181,118,.3);
+  border-radius: var(--radius); box-shadow: var(--shadow-gold);
+}
+.rating-summary__score { font-family: "Black Han Sans", sans-serif; font-size: 2.4rem; line-height: 1; color: var(--gold-soft); }
+.rating-summary__meta { text-align: left; }
+.rating-summary__meta .stars { display: block; margin-bottom: 3px; }
+.rating-summary__meta small { color: var(--text-dim); font-size: .8rem; }
+
+.footer__nav {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 28px;
+  padding: 6px 0 26px; margin-bottom: 22px; border-bottom: 1px solid var(--line);
+}
+.footer__nav-col h4 { font-size: .76rem; letter-spacing: 1px; color: var(--gold); margin-bottom: 12px; }
+.footer__nav-col ul { list-style: none; }
+.footer__nav-col li { margin-bottom: 9px; }
+.footer__nav-col a { font-size: .85rem; color: var(--text-dim); transition: color .2s ease; }
+.footer__nav-col a:hover { color: var(--gold-soft); }
+@media (max-width: 720px) { .footer__nav { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 440px) { .footer__nav { grid-template-columns: 1fr; } }
