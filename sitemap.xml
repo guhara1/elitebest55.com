@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://elitebest55.com/</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://elitebest55.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://elitebest55.com/lineup/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://elitebest55.com/rooms/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://elitebest55.com/menu/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://elitebest55.com/location/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://elitebest55.com/guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://elitebest55.com/reviews/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://elitebest55.com/gangnam/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://elitebest55.com/seolleung/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://elitebest55.com/daechi/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>

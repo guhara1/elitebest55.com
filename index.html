@@ -63,34 +63,36 @@
       <nav class="nav" id="nav" aria-label="주 메뉴">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#lineup">라인업</a>
+            <a href="/lineup/">라인업</a>
             <ul class="nav__drop">
-              <li><a href="#lineup">실시간 라인업 안내</a></li>
-              <li><a href="#reviews">베스트 후기</a></li>
-              <li><a href="#lineup">최근 업데이트</a></li>
+              <li><a href="/lineup/">실시간 라인업 안내</a></li>
+              <li><a href="/reviews/">베스트 후기</a></li>
+              <li><a href="/lineup/#updates">최근 업데이트</a></li>
             </ul>
           </li>
           <li class="nav__item">
-            <a href="#rooms">객실 &amp; 시스템</a>
+            <a href="/rooms/">객실 &amp; 시스템</a>
             <ul class="nav__drop">
-              <li><a href="#rooms">스탠다드 / 프리미엄 / VIP 룸</a></li>
-              <li><a href="#menu">주류 &amp; 안주 메뉴</a></li>
-              <li><a href="#rooms">최신 노래방 기기 (KY/금영)</a></li>
+              <li><a href="/rooms/">스탠다드 / 프리미엄 / VIP 룸</a></li>
+              <li><a href="/menu/">주류 &amp; 안주 메뉴</a></li>
+              <li><a href="/rooms/#system">최신 노래방 기기 (KY/금영)</a></li>
             </ul>
           </li>
           <li class="nav__item">
-            <a href="#location">위치 / 오시는 길</a>
+            <a href="/location/">위치 / 오시는 길</a>
             <ul class="nav__drop">
-              <li><a href="#location">선릉역 도보 5분 (약도)</a></li>
-              <li><a href="#location">대치동 방면 / 주차 안내</a></li>
+              <li><a href="/location/">선릉역 도보 5분 (약도)</a></li>
+              <li><a href="/location/#daechi">대치동 방면 / 주차 안내</a></li>
+              <li><a href="/seolleung/">선릉역 가라오케</a></li>
+              <li><a href="/daechi/">대치동 가라오케</a></li>
             </ul>
           </li>
           <li class="nav__item">
-            <a href="#guide">이용 안내</a>
+            <a href="/guide/">이용 안내</a>
             <ul class="nav__drop">
-              <li><a href="#guide">예약 확정 프로세스</a></li>
-              <li><a href="#menu">가격 / 패키지 안내</a></li>
-              <li><a href="#reserve">고객 센터 문의</a></li>
+              <li><a href="/guide/">예약 확정 프로세스</a></li>
+              <li><a href="/menu/">가격 / 패키지 안내</a></li>
+              <li><a href="/guide/#faq">고객 센터 문의</a></li>
             </ul>
           </li>
         </ul>
@@ -271,7 +273,7 @@
             </ul>
           </article>
         </div>
-        <p class="menu__note">* 가격 정책은 객실·시간·인원에 따라 달라집니다. 정확한 견적은 24시 콜센터로 문의해 주세요.</p>
+        <p class="menu__note">* 가격 정책은 객실·시간·인원에 따라 달라집니다. 정확한 견적은 24시 콜센터로 문의해 주세요. 자세한 구성은 <a href="/menu/" style="color:var(--gold-soft);text-decoration:underline;">강남 가라오케 가격 &amp; 패키지 안내</a>에서 확인하세요.</p>
       </div>
     </section>
 
@@ -281,6 +283,7 @@
         <header class="section__head">
           <p class="section__eyebrow">REVIEW</p>
           <h2 class="section__title">베스트 고객 후기</h2>
+          <p class="section__desc">더 많은 후기는 <a href="/reviews/" style="color:var(--gold-soft);text-decoration:underline;">강남 엘리트 가라오케 베스트 후기</a>에서 확인하세요.</p>
         </header>
         <div class="reviews__grid">
           <blockquote class="review-card">
@@ -328,6 +331,28 @@
             </dl>
             <a href="tel:000-0000-0000" class="btn btn--call btn--lg">📞 전화로 길 안내 받기</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 내부링크 허브 (롱테일 키워드) ============ -->
+    <section class="section related" id="guide-hub" style="padding-top:0;">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">GUIDE</p>
+          <h2 class="section__title">자세히 둘러보기</h2>
+          <p class="section__desc">관심 있는 항목을 눌러 더 자세한 안내를 확인하세요. 지역·객실·가격·예약 정보를 페이지별로 정리했습니다.</p>
+        </header>
+        <div class="related__grid">
+          <a class="related-card" href="/lineup/"><span>LINEUP</span><h3>강남 가라오케 실시간 라인업 안내</h3><p>분 단위로 바뀌는 라인업·객실 현황을 확인하는 방법.</p></a>
+          <a class="related-card" href="/rooms/"><span>ROOMS</span><h3>선릉역 가라오케 객실 &amp; 시스템</h3><p>스탠다드·프리미엄·VIP 플래티넘 룸과 음향·조명 시스템.</p></a>
+          <a class="related-card" href="/menu/"><span>PRICE</span><h3>강남 가라오케 가격 &amp; 패키지 안내</h3><p>주류·안주 구성과 패키지, 견적이 정해지는 기준.</p></a>
+          <a class="related-card" href="/location/"><span>LOCATION</span><h3>선릉역 가라오케 위치 / 오시는 길</h3><p>선릉역 도보 5분, 대치동 방면 동선과 주차 안내.</p></a>
+          <a class="related-card" href="/guide/"><span>RESERVE</span><h3>강남 가라오케 예약 방법 &amp; 이용 안내</h3><p>예약 확정 프로세스와 이용 에티켓, 자주 묻는 질문.</p></a>
+          <a class="related-card" href="/reviews/"><span>REVIEW</span><h3>강남 엘리트 가라오케 베스트 후기</h3><p>실제 방문 고객의 경험 기반 후기 모음.</p></a>
+          <a class="related-card" href="/gangnam/"><span>GANGNAM</span><h3>강남 가라오케 추천</h3><p>강남(선릉·역삼·대치)에서 가라오케를 고르는 기준.</p></a>
+          <a class="related-card" href="/seolleung/"><span>SEOLLEUNG</span><h3>선릉역 가라오케</h3><p>선릉역 도보 5분, 직장인 모임에 적합한 이유.</p></a>
+          <a class="related-card" href="/daechi/"><span>DAECHI</span><h3>대치동 가라오케</h3><p>대치동 방면에서 오는 동선과 차량·주차 접근성.</p></a>
         </div>
       </div>
     </section>
