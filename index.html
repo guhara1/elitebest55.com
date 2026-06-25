@@ -135,30 +135,35 @@
   </header>
 
   <main>
-    <!-- ============ 1) 히어로 배너 (풀 배경 영상) ============ -->
+    <!-- ============ 1) 히어로 배너 (CSS 아트) ============ -->
     <section class="hero" id="hero">
-      <video class="hero__media" autoplay muted loop playsinline preload="metadata" poster="/assets/hero-poster.jpg" aria-hidden="true">
-        <source src="/assets/hero.webm" type="video/webm" />
-        <source src="/assets/hero.mp4" type="video/mp4" />
-      </video>
       <span class="hero-orb hero-orb--1" aria-hidden="true"></span>
       <span class="hero-orb hero-orb--2" aria-hidden="true"></span>
       <div class="hero__overlay"></div>
       <div class="hero__content">
-        <p class="hero__eyebrow">SELLEUNG · SAMSEONG · 24H OPEN</p>
-        <h1 class="hero__title">강남 No.1<br /><strong>엘리트 라운지</strong></h1>
-        <p class="hero__lead">선릉역 · 삼성역 프리미엄 가라오케<br />최신 음향·조명 시설, 24시 연중무휴 운영</p>
-        <div class="hero__cta">
-          <a href="tel:010-3431-0531" class="btn btn--call btn--lg">
-            📞 지금 전화해서 실시간 예약 확인하기
-          </a>
-          <a href="#rooms" class="btn btn--ghost btn--lg">객실 둘러보기</a>
+        <div class="hero__text">
+          <p class="hero__eyebrow">SELLEUNG · SAMSEONG · 24H OPEN</p>
+          <h1 class="hero__title">강남 No.1<br /><strong>엘리트 라운지</strong></h1>
+          <p class="hero__lead">선릉역 · 삼성역 프리미엄 가라오케<br />최신 음향·조명 시설, 24시 연중무휴 운영</p>
+          <div class="hero__cta">
+            <a href="tel:010-3431-0531" class="btn btn--call btn--lg">
+              📞 지금 전화해서 실시간 예약 확인하기
+            </a>
+            <a href="#rooms" class="btn btn--ghost btn--lg">객실 둘러보기</a>
+          </div>
+          <ul class="hero__badges">
+            <li>24시 연중무휴</li>
+            <li>선릉역 도보 5분</li>
+            <li>완벽한 프라이빗 룸</li>
+          </ul>
         </div>
-        <ul class="hero__badges">
-          <li>24시 연중무휴</li>
-          <li>선릉역 도보 5분</li>
-          <li>완벽한 프라이빗 룸</li>
-        </ul>
+        <div class="hero__art" aria-hidden="true">
+          <div class="hero-halo"></div>
+          <div class="hero-mono">ELITE<span class="hero-mono__sub">KARAOKE&nbsp;LOUNGE</span></div>
+          <div class="equalizer">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
       </div>
     </section>
 
