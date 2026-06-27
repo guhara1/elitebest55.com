@@ -1,4 +1,27 @@
+# robots.txt — 강남 가라오케 엘리트 (https://elitebest55.com)
+# 모든 검색엔진 전체 허용 + 사이트맵/RSS 명시 (빠른 색인용)
+
 User-agent: *
 Allow: /
 
+# 구글
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# 네이버
+User-agent: Yeti
+Allow: /
+
+# 다음(카카오)
+User-agent: Daumoa
+Allow: /
+
+# 빙
+User-agent: bingbot
+Allow: /
+
 Sitemap: https://elitebest55.com/sitemap.xml
+Sitemap: https://elitebest55.com/rss.xml
